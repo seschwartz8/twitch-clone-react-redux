@@ -12,15 +12,24 @@ class StreamCreate extends Component {
     );
   }
 
+  onSubmit(formValues) {
+    console.log(formValues);
+  }
+
   render() {
     return (
-      <form className='ui form'>
+      // Using the built-in redux-form handleSubmit and passing it our onSubmit callback, which gets automatically passed the form's values
+      <form
+        onSubmit={this.props.handleSubmit(this.onSubmit)}
+        className='ui form'
+      >
         <Field name='title' component={this.renderInput} label='Enter Title' />
         <Field
           name='description'
           component={this.renderInput}
           label='Enter Description'
         />
+        <button className='ui primary'>Submit</button>
       </form>
     );
   }
