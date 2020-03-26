@@ -1,3 +1,16 @@
+## Startup Instructions
+
+- Clone to desktop
+- cd into client directory
+- npm start (starts app on localhost:3000)
+- open second terminal window
+- cd into api directory
+- npm start (starts api server)
+
+* note that all data will be stored in db.json file in api directory
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
