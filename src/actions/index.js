@@ -1,5 +1,6 @@
 import * as type from './types';
 import streams from '../apis/streams';
+import history from '../history';
 
 export const signIn = userId => {
   return {
@@ -15,13 +16,16 @@ export const signOut = () => {
 };
 
 export const createStream = formValues => {
-  return async dispatch => {
-    // POST request with axios to create new stream
-    const response = await streams.post('/streams', formValues);
+  return async (dispatch, getState) => {
+    // POST request with axios to create new stream with userId
+    const { userId } = getState().auth;
+    const response = await streams.post('/streams', { ...formValues, userId });
     dispatch({
       type: type.CREATE_STREAM,
       payload: response.data
     });
+    // Navigate the user back to list of streams (only after API request is resolved)
+    history.push('/');
   };
 };
 
