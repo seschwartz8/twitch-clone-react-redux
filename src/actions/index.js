@@ -54,11 +54,13 @@ export const fetchStream = id => {
 export const editStream = (id, formValues) => {
   return async dispatch => {
     // PUT request with axios to edit specific stream with new formValues
-    const response = await streams.put(`/streams/${id}`, formValues);
+    const response = await streams.patch(`/streams/${id}`, formValues);
     dispatch({
       type: type.EDIT_STREAM,
       payload: response.data
     });
+    // Navigate the user back to list of streams (only after API request is resolved)
+    history.push('/');
   };
 };
 
