@@ -16,7 +16,7 @@
 
 ## Description
 
-Epicodus Friday project: C#/.NET Core API for restaurants with full CRUD functionality. A user can view all restaurants, search for restaurants by name or rating, view a specific restaurant by id, return a random restaurant, create a restaurant, edit a restaurant, and delete a restaurant. Please see the API documentation below for instructions on how to access and use this API.
+Twitch clone react app that utilizes redux, Google OAuth, portals, redux forms, and react router to provide CRUD functionality. You can log in, create streams, view all streams, view specific stream details, and edit/delete streams (but only if you were the one who created them). Built for "Modern React with Redux" course on Udemy.
 
 ## Installation Requirements
 
