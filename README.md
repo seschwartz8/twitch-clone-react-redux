@@ -28,6 +28,9 @@ Epicodus Friday project: C#/.NET Core API for restaurants with full CRUD functio
 - cd into api directory
   - npm install
   - npm start (starts api server)
+- cd into rtmpserver directory
+  - npm install
+  - npm start (starts video streaming server)
 
 * note that all data will be stored in db.json file in api directory
 
@@ -40,6 +43,8 @@ Epicodus Friday project: C#/.NET Core API for restaurants with full CRUD functio
 - Redux form
 - Google OAuth
 - Portals (to create modals)
+- json server (for running API)
+- Node Media Server RTMP server (for streaming videos)
 - Semantic UI
 
 ---
