@@ -14,6 +14,32 @@ class StreamShow extends Component {
   componentDidMount() {
     const { id } = this.props.match.params;
     this.props.fetchStream(id);
+    this.buildPlayer();
+  }
+
+  componentDidUpdate() {
+    // In case buildPlayer failed on mount (if stream hadn't fetched yet), build the player once the stream has been fetched
+    this.buildPlayer();
+  }
+
+  componentWillUnmount() {
+    // To stop the video player from continuously attempting to stream video
+    this.player.destroy();
+  }
+
+  buildPlayer() {
+    // If we already have a player, or the stream hasn't fetched yet
+    if (this.player || !this.props.stream) {
+      return;
+    }
+    // Flv downloads the video stream from the server and converts it to be playable in the html <video> player
+    const { id } = this.props.match.params;
+    this.player = flv.createPlayer({
+      type: 'flv',
+      url: `http://localhost:8000/live/${id}.flv`,
+    });
+    this.player.attachMediaElement(this.videoRef.current);
+    this.player.load();
   }
 
   render() {

@@ -42,7 +42,7 @@ Epicodus Friday project: C#/.NET Core API for restaurants with full CRUD functio
 - To make your own video streams:
 
   - Download OBS (open broadcaster software) to capture your video
-  - This app supports video type of: http-flv
+  - Customize your OBS settings to stream video to the URL: rtmp://localhost/live (stream type: custom streaming server, stream key: STREAM_NAME)
 
 ## Technologies Used
 
