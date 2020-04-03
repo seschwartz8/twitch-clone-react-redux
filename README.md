@@ -2,10 +2,12 @@
 
 - Clone to desktop
 - cd into client directory
-- npm start (starts app on localhost:3000)
+  - npm install
+  - npm start (starts app on localhost:3000)
 - open second terminal window
 - cd into api directory
-- npm start (starts api server)
+  - npm install
+  - npm start (starts api server)
 
 * note that all data will be stored in db.json file in api directory
 
