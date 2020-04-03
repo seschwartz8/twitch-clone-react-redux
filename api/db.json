@@ -1,25 +1,16 @@
 {
   "streams": [
     {
-      "title": "fewfewef",
-      "description": "awawefawefawefwaef",
-      "id": 1
-    },
-    {
-      "title": "fwefwf",
-      "description": "efefe",
+      "title": "Tea",
+      "description": "Watch someone make tea. Ooooh so relaxing",
+      "userId": "100409585657033242492",
       "id": 2
     },
     {
-      "title": "wwefwe",
-      "description": "wefwef",
-      "id": 3
-    },
-    {
-      "title": "My Stream1111",
-      "description": "it's cool",
+      "title": "Video Games",
+      "description": "Playing lots of video games",
       "userId": "100409585657033242492",
-      "id": 4
+      "id": 3
     }
   ]
 }

@@ -11,6 +11,7 @@
 1. [Description](#description)
 2. [Setup/Installation Requirements](#installation-requirements)
 3. [Technologies Used](#technologies-used)
+4. [Application Sample Images](#sample-images)
 
 ---
 
@@ -57,6 +58,10 @@ Twitch clone react app that utilizes redux, Google OAuth, portals, redux forms, 
 - Node Media Server RTMP server (for streaming videos)
 - flv.js (to show the videos on screen)
 - Semantic UI
+
+## Sample Images
+
+![Viewing list of streams](~/client/src/img/stream-list)
 
 ---
 
