@@ -61,7 +61,7 @@ Twitch clone react app that utilizes redux, Google OAuth, portals, redux forms, 
 
 ## Sample Images
 
-![Viewing list of streams](./img/stream-list)
+![Viewing list of streams](./img/stream-list.png)
 
 ---
 
