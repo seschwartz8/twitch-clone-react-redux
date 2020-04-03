@@ -20,19 +20,29 @@ Epicodus Friday project: C#/.NET Core API for restaurants with full CRUD functio
 
 ## Installation Requirements
 
-- Clone to desktop
+- clone repository to your desktop
 - cd into client directory
+
   - npm install
   - npm start (starts app on localhost:3000)
+
 - open second terminal window
 - cd into api directory
+
   - npm install
   - npm start (starts api server)
+  - (note that all data will be stored in db.json file in api directory)
+
+- open third terminal window
 - cd into rtmpserver directory
+
   - npm install
   - npm start (starts video streaming server)
 
-* note that all data will be stored in db.json file in api directory
+- To make your own video streams:
+
+  - Download OBS (open broadcaster software) to capture your video
+  - This app supports video type of: http-flv
 
 ## Technologies Used
 
@@ -45,6 +55,7 @@ Epicodus Friday project: C#/.NET Core API for restaurants with full CRUD functio
 - Portals (to create modals)
 - json server (for running API)
 - Node Media Server RTMP server (for streaming videos)
+- flv.js (to show the videos on screen)
 - Semantic UI
 
 ---
