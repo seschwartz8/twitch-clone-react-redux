@@ -1,4 +1,4 @@
-# Restaurants API
+# Twitch Video Streaming Clone
 
 #### Twitch clone react app that utilizes redux, Google OAuth, portals, redux forms, and react router to provide CRUD functionality. Built for "Modern React with Redux" course on Udemy.
 
