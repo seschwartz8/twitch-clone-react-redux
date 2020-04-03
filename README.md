@@ -1,4 +1,24 @@
-## Startup Instructions
+# Restaurants API
+
+#### Twitch clone react app that utilizes redux, Google OAuth, portals, redux forms, and react router to provide CRUD functionality. Built for "Modern React with Redux" course on Udemy.
+
+#### By Sarah "Sasa" Schwartz, April 2020
+
+---
+
+## Table of Contents
+
+1. [Description](#description)
+2. [Setup/Installation Requirements](#installation-requirements)
+3. [Technologies Used](#technologies-used)
+
+---
+
+## Description
+
+Epicodus Friday project: C#/.NET Core API for restaurants with full CRUD functionality. A user can view all restaurants, search for restaurants by name or rating, view a specific restaurant by id, return a random restaurant, create a restaurant, edit a restaurant, and delete a restaurant. Please see the API documentation below for instructions on how to access and use this API.
+
+## Installation Requirements
 
 - Clone to desktop
 - cd into client directory
@@ -10,6 +30,17 @@
   - npm start (starts api server)
 
 * note that all data will be stored in db.json file in api directory
+
+## Technologies Used
+
+- React
+- React router
+- Redux
+- Redux thunk
+- Redux form
+- Google OAuth
+- Portals (to create modals)
+- Semantic UI
 
 ---
 
